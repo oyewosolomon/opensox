@@ -12,7 +12,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="relative min-h-screen bg-blue-500">
+    <div className="relative min-h-screen bg-blue-600">
       {/* Navigation Bar */}
       <nav className="absolute top-0 left-0 right-0 p-4">
         <div className="container mx-auto flex items-center justify-between">
