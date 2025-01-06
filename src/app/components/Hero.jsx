@@ -111,6 +111,7 @@ const HeroSection = () => {
         </div>
 
         {/* Scroll Indicator */}
+        <a href="#forclient">
         <div className="absolute bottom-8 animate-bounce">
           <svg
             className="w-8 h-8 text-white"
@@ -125,7 +126,9 @@ const HeroSection = () => {
               d="M19 14l-7 7m0 0l-7-7m7 7V3"
             />
           </svg>
+          
         </div>
+        </a>
       </div>
     </div>
   );
