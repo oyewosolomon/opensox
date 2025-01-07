@@ -31,14 +31,14 @@ export default function ForClient() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <Card
                     title="Post a job and hire a pro"
-                    description="Talent Marketplace™"
+                    description="Talent Box"
                     link="#"
                 />
-                <Card
+                {/* <Card
                     title="Browse and buy projects"
-                    description="Project Catalog™"
+                    description="Project Catalog"
                     link="#"
-                />
+                /> */}
                
                 </div>
             </div>
