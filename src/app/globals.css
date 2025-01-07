@@ -19,3 +19,17 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* .dropdown-container {
+  position: relative;
+} */
+
+/* .dropdown-menu {
+  position: absolute;
+  z-index: 999; 
+} */
+
+/* main {
+  overflow: visible;
+} */
+

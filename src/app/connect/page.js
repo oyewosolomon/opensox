@@ -1,6 +1,18 @@
 import Link from "next/link";
 
 export default function ConnectPage() {
+  const departments = [
+    'Customer Experience',
+    'Data & Insights',
+    'Engineering',
+    'Finance & Legal',
+    'International',
+    'Marketing',
+    'People',
+    'Product & Design',
+    'Sales',
+    'All',
+  ];
   return (
     <div className="flex h-screen flex-col md:flex-row">
       
@@ -22,18 +34,7 @@ export default function ConnectPage() {
 
           <div className="w-full max-w-md bg-white shadow-md rounded-lg overflow-hidden">
             <ul className="divide-y divide-gray-200 h-72 overflow-y-auto">
-              {[
-                'Customer Experience',
-                'Data & Insights',
-                'Engineering',
-                'Finance & Legal',
-                'International',
-                'Marketing',
-                'People',
-                'Product & Design',
-                'Sales',
-                'All',
-              ].map((item) => (
+              {departments.map((item) => (
                 <li key={item} className="px-6 py-4 flex justify-between items-center hover:bg-gray-50">
                   <span className="text-gray-700">{item}</span>
                   <input type="radio" name="interest" className="form-radio text-blue-600" />
