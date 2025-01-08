@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { ChevronRight, ChevronLeft } from 'lucide-react';
 import services from '../data/servicesData';
+import Link from 'next/link';
 
 const NavigationMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -58,7 +59,7 @@ const NavigationMenu = () => {
                 <div className="flex justify-between items-center mb-2">
                   <h3 className="text-sm font-semibold text-gray-900">{section.title}</h3>
                   {sectionIndex === 0 && (
-                    <a href="#" className="text-sm text-blue-600 hover:text-blue-700">
+                    <a href="/business" className="text-sm text-blue-600 hover:text-blue-700">
                       See all
                     </a>
                   )}

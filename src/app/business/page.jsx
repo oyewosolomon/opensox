@@ -69,7 +69,7 @@ const ServicesPage = () => {
               href="#" 
               className="text-blue-600 hover:text-blue-700 underline py-3 transition-colors"
             >
-              Sign up as a freelancer
+              Join as a professional
             </a>
           </div>
         </div>
