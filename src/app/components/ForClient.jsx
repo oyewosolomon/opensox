@@ -42,7 +42,7 @@ export default function ForClient() {
                 {/* Action Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <Card
-                    title="Post a job and hire a pro"
+                    title="Describe your task and hire a pro"
                     description="Talent Box"
                     onClick={toggleForm} 
                   
