@@ -36,8 +36,8 @@ export default function ConnectPage() {
             <ul className="divide-y divide-gray-200 h-72 overflow-y-auto">
               {departments.map((item) => (
                 <li key={item} className="px-6 py-4 flex justify-between items-center hover:bg-gray-50">
-                  <span className="text-gray-700">{item}</span>
-                  <input type="radio" name="interest" className="form-radio text-blue-600" />
+                  <label htmlFor={item} className="text-gray-700">{item}</label>
+                  <input type="radio" id={item} name="interest" className="form-radio text-blue-600" />
                 </li>
               ))}
             </ul>

@@ -1,6 +1,18 @@
+"use client"
+
 import Image from 'next/image';
+import { useState } from 'react';
+import MultiStepForm from './MultiStepForm'; // Import the MultiStepForm component
+
 
 export default function ForClient() {
+  const [isFormOpen, setIsFormOpen] = useState(false); // State to control form visibility
+
+  const toggleForm = () => setIsFormOpen(prev => !prev);
+  const handleFormClose = () => {
+    console.log('The form was closed');
+  };
+
   return (
     <div className=" h-screen overflow-hidden" id='forclient'>
         <div className='relative max-w-6xl mx-auto my-10 pb-10 pt-10 h-[600px] rounded-xl'>
@@ -32,29 +44,28 @@ export default function ForClient() {
                 <Card
                     title="Post a job and hire a pro"
                     description="Talent Box"
-                    link="#"
+                    onClick={toggleForm} 
+                  
                 />
-                {/* <Card
-                    title="Browse and buy projects"
-                    description="Project Catalog"
-                    link="#"
-                /> */}
-               
                 </div>
             </div>
         </div>
+        {/* {isFormOpen && <MultiStepForm onClose={handleFormClose} />} */}
+        <MultiStepForm
+        isOpen={isFormOpen}
+        onClose={() => setIsFormOpen(false)}
+      />
     </div>
   );
 }
-
-function Card({ title, description, link }) {
+function Card({ title, description, onClick }) {
   return (
-    <a
-      href={link}
-      className="block bg-blue-600 text-white p-6 rounded-lg hover:bg-blue-700 transition"
+    <div
+      className="block bg-blue-600 text-white p-6 rounded-lg hover:bg-blue-700 transition cursor-pointer"
+      onClick={onClick} // Call the onClick function when the card is clicked
     >
       <h3 className="text-2xl font-bold mb-2">{title}</h3>
       <p>{description} →</p>
-    </a>
+    </div>
   );
 }
