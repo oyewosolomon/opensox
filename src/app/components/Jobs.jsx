@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
 import MultiStepForm from './MultiStepForm'; 
+import Link from 'next/link';
 
 const JobsCard = () => {
   const [isFormOpen, setIsFormOpen] = useState(false); // State to control form visibility
@@ -152,10 +153,17 @@ const JobsCard = () => {
           </div>
         </div>
       </div>
+      <div className='flex justify-center align-middle place-items-center'>
+        <Link href="/business" className="bg-blue-600 hover:text-white text-white rounded-xl px-5 py-2 my-5 text-center text-md font-bold">
+          All Services
+        </Link>
+      </div>
       <MultiStepForm
         isOpen={isFormOpen}
         onClose={() => setIsFormOpen(false)}
       />
+     
+     
     </section>
   );
 };

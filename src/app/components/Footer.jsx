@@ -44,9 +44,7 @@ const Footer = () => {
               <Link href="/help" className="text-gray-500 hover:text-gray-700">
                 Help centre
               </Link>
-              <Link href="/mobile-app-pro" className="text-gray-500 hover:text-gray-700">
-                Mobile App
-              </Link>
+            
             </nav>
           </div>
 
@@ -106,7 +104,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-gray-200">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-gray-500">
-              © 2025 Opensox.com Global Limited.{' '}
+              © 2025 Opensox inc.{' '}
               <Link href="/terms" className="hover:text-gray-700">Terms & Conditions</Link>
               {' / '}
               <Link href="/cookie-policy" className="hover:text-gray-700">Cookie policy</Link>

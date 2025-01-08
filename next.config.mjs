@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['readymadeui.com','placehold.co'], // add any other external domains here
+        domains: ['readymadeui.com','placehold.co','picsum.photos'], // add any other external domains here
       },
 };
 
