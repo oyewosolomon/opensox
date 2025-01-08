@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
-import MultiStepForm from './MultiStepForm'; // Import the MultiStepForm component
+import MultiStepForm from './MultiStepForm'; 
 
 
 export default function ForClient() {

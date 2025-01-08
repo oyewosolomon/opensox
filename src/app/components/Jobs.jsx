@@ -2,56 +2,60 @@
 
 import Image from 'next/image';
 import { useState, useEffect, useRef } from 'react';
+import MultiStepForm from './MultiStepForm'; 
 
 const JobsCard = () => {
+  const [isFormOpen, setIsFormOpen] = useState(false); // State to control form visibility
 
-    const availableServices = [
-        {
-          name: "Graphics & Design",
-          description: "Bring your ideas to life with creative graphic designs, logos, and branding tailored to your vision.",
-          image: "https://placehold.co/600x400/000000/FFFFFF/png",
-        },
-        {
-          name: "Programming & Tech",
-          description: "Build powerful applications, websites, and software solutions with expert programming services.",
-          image: "https://placehold.co/600x400/000000/FFFFFF/png",
-        },
-        {
-          name: "Digital Marketing",
-          description: "Grow your online presence with targeted marketing strategies, social media campaigns, and SEO.",
-          image: "https://placehold.co/600x400/000000/FFFFFF/png",
-        },
-        {
-          name: "Video & Animation",
-          description: "Create stunning videos and animations for your brand, including explainer videos and promotional content.",
-          image: "https://placehold.co/600x400/000000/FFFFFF/png",
-        },
-        {
-          name: "Writing & Translation",
-          description: "Get high-quality content writing, editing, and translation services for all your communication needs.",
-          image: "https://placehold.co/600x400/000000/FFFFFF/png",
-        },
-        {
-          name: "Music & Audio",
-          description: "Enhance your projects with professional audio production, music composition, and voice-over services.",
-          image: "https://placehold.co/600x400/000000/FFFFFF/png",
-        },
-        {
-          name: "Business",
-          description: "Receive expert advice and support on business plans, market research, and operational strategies.",
-          image: "https://placehold.co/600x400/000000/FFFFFF/png",
-        },
-        {
-          name: "Finance",
-          description: "Manage your finances effectively with services like financial planning, accounting, and tax consultancy.",
-          image: "https://placehold.co/600x400/000000/FFFFFF/png",
-        },
-        {
-          name: "AI Services",
-          description: "Leverage cutting-edge AI solutions for automation, machine learning, and data analysis.",
-          image: "https://placehold.co/600x400/000000/FFFFFF/png",
-        },
-      ];
+  const toggleForm = () => setIsFormOpen(prev => !prev);
+
+  const availableServices = [
+      {
+        name: "Graphics & Design",
+        description: "Bring your ideas to life with creative graphic designs, logos, and branding tailored to your vision.",
+        image: "https://placehold.co/600x400/000000/FFFFFF/png",
+      },
+      {
+        name: "Programming & Tech",
+        description: "Build powerful applications, websites, and software solutions with expert programming services.",
+        image: "https://placehold.co/600x400/000000/FFFFFF/png",
+      },
+      {
+        name: "Digital Marketing",
+        description: "Grow your online presence with targeted marketing strategies, social media campaigns, and SEO.",
+        image: "https://placehold.co/600x400/000000/FFFFFF/png",
+      },
+      {
+        name: "Video & Animation",
+        description: "Create stunning videos and animations for your brand, including explainer videos and promotional content.",
+        image: "https://placehold.co/600x400/000000/FFFFFF/png",
+      },
+      {
+        name: "Writing & Translation",
+        description: "Get high-quality content writing, editing, and translation services for all your communication needs.",
+        image: "https://placehold.co/600x400/000000/FFFFFF/png",
+      },
+      {
+        name: "Music & Audio",
+        description: "Enhance your projects with professional audio production, music composition, and voice-over services.",
+        image: "https://placehold.co/600x400/000000/FFFFFF/png",
+      },
+      {
+        name: "Business",
+        description: "Receive expert advice and support on business plans, market research, and operational strategies.",
+        image: "https://placehold.co/600x400/000000/FFFFFF/png",
+      },
+      {
+        name: "Finance",
+        description: "Manage your finances effectively with services like financial planning, accounting, and tax consultancy.",
+        image: "https://placehold.co/600x400/000000/FFFFFF/png",
+      },
+      {
+        name: "AI Services",
+        description: "Leverage cutting-edge AI solutions for automation, machine learning, and data analysis.",
+        image: "https://placehold.co/600x400/000000/FFFFFF/png",
+      },
+    ];
       
 
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -113,7 +117,8 @@ const JobsCard = () => {
               }}
             >
               {duplicatedServices.map((testimonial, index) => (
-                <a href={testimonial.image}
+                <a href="#"
+                  onClick={toggleForm} 
                   key={index}
                   className="flex-shrink-0 w-96 bg-gradient-to-r from-blue-100 via-white to-blue-100 px-6 py-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow "
                 //   style={{
@@ -147,6 +152,10 @@ const JobsCard = () => {
           </div>
         </div>
       </div>
+      <MultiStepForm
+        isOpen={isFormOpen}
+        onClose={() => setIsFormOpen(false)}
+      />
     </section>
   );
 };
