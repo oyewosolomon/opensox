@@ -98,7 +98,7 @@ const JobsCard = () => {
     <section className="py-16 bg-white overflow-hidden">
       <div className="mx-auto text-center">
         <h2 className="flex justify-center align-middle place-items-center px-5 text-center text-3xl font-bold text-gray-800 mb-12 font-sora">
-          Jobs
+          Popular services
         </h2>
         <div className="relative py-10 mt-32 mb-20">
           {/* Gradient background */}
