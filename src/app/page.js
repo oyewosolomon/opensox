@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import MarketplaceExpert from "./components/MarketplaceExpert";
 import HowItWorks from "./components/HowItWorks";
 import WhyChooseOpensox from "./components/WhyChooseUs";
+import TrustedSection from "./components/TrustedSection";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
     <HowItWorks/>
     <WhyChooseOpensox/>
     <JobsCard/>
+    <TrustedSection/>
     {/* <MarketplaceExpert/> */}
     <Footer/>
    </div>

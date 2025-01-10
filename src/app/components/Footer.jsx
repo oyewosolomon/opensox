@@ -55,7 +55,7 @@ const Footer = () => {
               <Link href="/about" className="text-gray-500 hover:text-gray-700">
                 About Opensox
               </Link>
-              <Link href="/careers" className="text-gray-500 hover:text-gray-700">
+              <Link href="/jobs" className="text-gray-500 hover:text-gray-700">
                 Careers
               </Link>
               
