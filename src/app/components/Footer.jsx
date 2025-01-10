@@ -13,10 +13,10 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-gray-900">For Customers</h3>
             <nav className="flex flex-col space-y-3">
-              <Link href="/find-professional" className="text-gray-500 hover:text-gray-700">
+              <Link href="/business" className="text-gray-500 hover:text-gray-700">
                 Find a Professional
               </Link>
-              <Link href="/how-it-works" className="text-gray-500 hover:text-gray-700">
+              <Link href="/#how-it-works" className="text-gray-500 hover:text-gray-700">
                 How it works
               </Link>
               <Link href="/login" className="text-gray-500 hover:text-gray-700">
@@ -32,13 +32,13 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-gray-900">For Professionals</h3>
             <nav className="flex flex-col space-y-3">
-              <Link href="/how-it-works-pro" className="text-gray-500 hover:text-gray-700">
+              <Link href="/#how-it-works" className="text-gray-500 hover:text-gray-700">
                 How it works
               </Link>
               <Link href="/pricing/client" className="text-gray-500 hover:text-gray-700">
                 Pricing
               </Link>
-              <Link href="/join" className="text-gray-500 hover:text-gray-700">
+              <Link href="/connect" className="text-gray-500 hover:text-gray-700">
                 Join as a Professional
               </Link>
               <Link href="/help" className="text-gray-500 hover:text-gray-700">

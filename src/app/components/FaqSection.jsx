@@ -55,7 +55,7 @@ const FAQSection = () => {
 
       <div className="mt-20 text-center mb-14">
         <h3 className="text-4xl font-semibold text-blue-600 mb-4">
-          Start winning <br /> new  business today
+          Start building <br /> new  business today
         </h3>
         <button className="px-6 py-3 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700">
           Join as a Professional
