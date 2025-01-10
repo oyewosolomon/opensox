@@ -35,7 +35,7 @@ const Footer = () => {
               <Link href="/how-it-works-pro" className="text-gray-500 hover:text-gray-700">
                 How it works
               </Link>
-              <Link href="/pricing" className="text-gray-500 hover:text-gray-700">
+              <Link href="/pricing/client" className="text-gray-500 hover:text-gray-700">
                 Pricing
               </Link>
               <Link href="/join" className="text-gray-500 hover:text-gray-700">
