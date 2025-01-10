@@ -48,7 +48,7 @@ export default function ConnectPage() {
           </button>
 
           <p className="mt-4 text-sm text-gray-500">
-            Already connected? <a href="#" className="text-blue-600">Sign in.</a>
+            Already connected? <a href="/login" className="text-blue-600">Sign in.</a>
           </p>
         </div>
       </div>
