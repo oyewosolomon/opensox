@@ -5,6 +5,7 @@ import { Search, ArrowLeft, X } from 'lucide-react';
 import NavigationMenu from './NavigationMenu';
 import NavigationMenuAlt from './NavigationMenuAlt';
 import Link from 'next/link';
+import ProfileMenu from './ProfileMenu';
 
 const NavigationAlt = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +36,7 @@ const NavigationAlt = () => {
         {/* Search Section */}
         <div className="relative">
           {/* Desktop Search */}
-          <div className="hidden md:flex items-center">
+          <div className="hidden md:flex items-center gap-2">
             <div className="relative">
               <input 
                 type="text" 
@@ -51,6 +52,7 @@ const NavigationAlt = () => {
                 <Search className="w-4 h-4 text-black/70 hover:text-black" />
               </button>
             </div>
+              <ProfileMenu/>
           </div>
 
           {/* Mobile Search Icon */}
@@ -58,7 +60,7 @@ const NavigationAlt = () => {
             onClick={() => setIsOpen(true)} 
             className="text-white md:hidden"
           >
-            <Search className="w-6 h-6" />
+            <Search className="w-6 h-6 text-black/70 hover:text-black" />
           </button>
 
           {/* Mobile Search Overlay */}

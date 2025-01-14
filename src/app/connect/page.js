@@ -42,10 +42,12 @@ export default function ConnectPage() {
               ))}
             </ul>
           </div>
-
-          <button className="mt-8 px-6 py-3 w-3/5 bg-black text-white rounded-lg hover:bg-gray-800">
+          
+          <div className="mt-8">
+          <Link href='/sellers' className=" px-6 py-3 w-3/5 bg-black text-white rounded-lg hover:bg-gray-800">
             Continue
-          </button>
+          </Link>
+          </div>
 
           <p className="mt-4 text-sm text-gray-500">
             Already connected? <a href="/login" className="text-blue-600">Sign in.</a>
